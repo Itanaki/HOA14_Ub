@@ -1,0 +1,14 @@
+---
+- name: Update apt package cache
+  apt:
+    update_cache: yes
+
+- name: Install required packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - python3
+    - python3-pip
+    - virtualenv
+    - software-properties-common
