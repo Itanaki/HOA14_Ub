@@ -12,7 +12,7 @@
     dest: /etc/glance/glance-api.conf
     content: |
       [database]
-      connection = mysql+pymysql://glance:1234@controller/glance
+      connection = mysql+pymysql://enzo:hakdog21@controller/glance
       [keystone_authtoken]
       www_authenicate_uri =  http://controller:5000
       auth_url = http://controller:5000

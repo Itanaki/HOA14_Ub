@@ -10,7 +10,7 @@
     content: |
       [DEFAULT]
       tranport_url = rabbit://openstack:1234@controller
-      my_ip = 192.168.56.116
+      my_ip = 192.168.56.111
 
 - name: configuring identity service access (1)
   copy:
